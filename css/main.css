@@ -1,0 +1,37 @@
+#carouselAbout img {
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    width: 100%;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 35, 110, 0.753);
+    border-radius: 10px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    opacity: 1;
+    width: 5%;
+}
+
+.carousel-control-prev:hover {
+    .carousel-control-prev-icon {
+        transition: all 0.2s ease-in-out;
+        padding: 20px;
+        background-color: rgb(0, 66, 209);
+    }
+}
+.carousel-control-next:hover {
+    .carousel-control-next-icon {
+        transition: all 0.2s ease-in-out;
+        padding: 20px;
+        background-color: rgb(0, 66, 209);
+    }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 35, 110, 0.753);
+    border-radius: 50%;
+}
