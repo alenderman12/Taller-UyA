@@ -1,3 +1,64 @@
+body {
+    background-color: #161920;
+}
+h1, h2, h3, h4, h5, h6, p {
+    color: #d7dddd;
+}
+main {
+    margin-top: 175px;
+}
+footer {
+    background-color: #161920;
+}
+#hero {
+    max-width: 900px;
+}
+.navbar {
+    background-color: #000000;
+    height: 80px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+}
+.navbar-brand {
+    font-weight: 700;
+    color: #ffffff;
+    transition: 0.3s color;
+}
+.navbar-brand:hover {
+    color: #66c0f4;
+}
+.navbar-brand:focus {
+    color: #0059ff;
+}
+.login-button {
+    background-color: #2d91ca;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+.login-button:hover {
+    background-color: #5bacdb;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+.navbar-toggler {
+    border: none;
+}
+.navbar-toggler:focus, .btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+.nav-link {
+    font-weight: 500;
+}
+.nav-link:hover, .nav-link.active {
+    color: black;
+}
+#info {
+    background-color: #1f2733;
+}
 #carouselAbout img {
     aspect-ratio: 16/9;
     object-fit: cover;

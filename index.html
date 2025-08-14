@@ -10,45 +10,67 @@
         <title>Document</title>
 </head>
 <body>
-    <header class="bg-primary bg-gradient shadow-sm mb-4 fixed-top">
+    <header class="bg-primary bg-gradient shadow-sm mb-4 fixed-top m-3">
+        <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a href="index.html" id="home-link" class="text-decoration-none text-white">
-                <h1 class="text-center py-3 mb-0">Level-Up Accesible</h1>
-            </a>
-            <nav aria-label="Navegación principal">
-                <ul class="nav justify-content-center nav-pills mb-3">
-                    <li class="nav-item"><a class="nav-link text-white" href="#about">Productos</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#about">Noticias</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#about">Comunidades</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#about">Sobre nosotros</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#contact">Contacto</a></li>
+            <a class="navbar-brand me-auto fs-2" href="#">Level-Up</a>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Level-Up</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-lg-2" href="#">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-lg-2" href="#">Comunidades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-lg-2" href="#">Noticias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-lg-2" href="#about">Sobre nosotros</a>
+                </li>
                 </ul>
-            </nav>
+            </div>
+            </div>
+            <a href="" class="login-button">Iniciar Sesion</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
         </div>
+        </nav>
     </header>
-    <main class="container d-flex flex-column align-items-center" style="margin-top: 150px;">
-        <section id="hero" class="w-100" style="max-width:900px;">
+    <main class="container d-flex flex-column align-items-center">
+        <section id="hero" class="w-100">
             <h2 class="text-center mb-4">Bienvenido a Level-Up Accesible</h2>
             <div id="hero-content" class="row align-items-center justify-content-center g-4">
                 <div class="col-12 col-md-4 d-flex justify-content-center">
                     <img src="https://www.svgrepo.com/show/479292/photo-5.svg" alt="Imagen de prueba" id="hero-image" class="img-fluid rounded shadow" style="aspect-ratio: 3/5; object-fit: cover; width: 220px; max-width: 100%;">
                 </div>
                 <div class="col-12 col-md-8">
-                    <div id="info" class="bg-white rounded shadow p-4 text-start">
+                    <div id="info" class="rounded shadow p-4 text-start">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum neque tortor, et laoreet erat placerat non. Sed in finibus tellus. In eu velit id velit cursus eleifend sed eu neque. In vulputate, lacus in consequat consequat, augue nunc consequat augue, a molestie quam ante et orci. Maecenas quis ante nisi. Integer quis ornare leo. Sed quis dui eget mi porttitor auctor. Sed ornare, nunc ut rhoncus tristique, ex tellus aliquam diam, at interdum eros odio in turpis. Sed vestibulum molestie tincidunt. Integer id sollicitudin lacus. Suspendisse tempor leo ac blandit interdum. Nam feugiat ac nibh nec porta. Nunc varius.</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="about" class="mt-5" style="width: 80%;">
-            <h2 class="text-center mb-4">Sobre nosotros</h2>
+        <section id="about" class="mt-5 row w-100">
+            <h2 class="text-center mb-4" id="sobre">Sobre nosotros</h2>
+            <div class="col-lg-1 col-sm-0"></div>
+            <div class="col-lg-10 col-sm-12">
             <div id="carouselAbout" class="carousel slide" aria-label="Carrusel de información sobre la comunidad">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselAbout" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselAbout" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselAbout" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            <div class="carousel-inner">
+            <div class="carousel-inner col-md-4 rounded-4">
                 <div class="carousel-item active">
                 <img src="https://img.tamindir.com/2021/12/470608/ssd-mouse.jpg" class="d-block w-100" alt="Imagen de personas jugando videojuegos">
                 <div class="carousel-caption d-none d-md-block">
@@ -80,9 +102,11 @@
                 <span class="visually-hidden">Next</span>
             </button>
             </div>
-        </section>  
+            </div>
+            <div class="col-lg-1 col-sm-0"></div>
+        </section>
     </main>
-    <footer class="bg-primary text-white text-center py-3 mt-5">
+    <footer class="border-top border-white border-3 border-opacity-10 text-center py-3 mt-5">
         
     </footer>
 
