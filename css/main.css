@@ -46,6 +46,9 @@ footer {
 .navbar-toggler {
     border: none;
 }
+.navbar-toggler-icon {
+    color: white;
+}
 .navbar-toggler:focus, .btn-close:focus {
     box-shadow: none;
     outline: none;
