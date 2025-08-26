@@ -5,7 +5,7 @@ h1, h2, h3, h4, h5, h6, p {
     color: #d7dddd;
 }
 main {
-    margin-top: 175px;
+    margin-top: 125px;
 }
 footer {
     background-color: #161920;
@@ -25,11 +25,11 @@ footer {
     color: #ffffff;
     transition: 0.3s color;
 }
-.navbar-brand:hover {
+.navbar-brand:hover,.nav-link:hover {
     color: #66c0f4;
 }
 .navbar-brand:focus {
-    color: #0059ff;
+    color: #3c6cc5;
 }
 .login-button {
     background-color: #2d91ca;
@@ -45,6 +45,14 @@ footer {
 }
 .navbar-toggler {
     border: none;
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255,255,255,1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.btn-close {
+    filter: invert(1);
+    background-color: transparent;
+    opacity: 1;
 }
 .navbar-toggler-icon {
     color: white;
