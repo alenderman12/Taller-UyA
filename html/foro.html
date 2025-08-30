@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script type="module" src="../javascript/verificacion.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
     <link rel="stylesheet" href="../css/main.css">
     <link rel="icon" href="../favicon.png" type="image/x-icon">
@@ -47,92 +48,86 @@
     </header>
     <main class="container mt-5 pt-5">
         <div class="text-center mb-5">
-            <h1>Consolas y Periféricos Accesibles</h1>
-            <p class="lead">Compara las opciones de accesibilidad de las principales consolas y descubre periféricos diseñados para todos.</p>
+            <h1 class="display-4 fw-bold">Foro de Ayuda y Sugerencias</h1>
+            <p class="lead text-white-50">¿Tienes alguna duda o una idea para mejorar la comunidad? Este es tu espacio.</p>
         </div>
 
-        <section id="comparativa-consolas" class="mb-5" aria-labelledby="titulo-comparativa">
-            <h2 id="titulo-comparativa" class="mb-4">Tabla Comparativa de Consolas</h2>
-            <div class="table-responsive">
-                <table class="table table-dark table-striped table-bordered">
-                    <caption class="text-white-50">Tabla comparando las características de accesibilidad de fábrica de PlayStation 5, Xbox Series X|S y Nintendo Switch.</caption>
-                    <thead class="thead-light">
-                        <tr>
-                            <th scope="col">Característica</th>
-                            <th scope="col">PlayStation 5</th>
-                            <th scope="col">Xbox Series X|S</th>
-                            <th scope="col">Nintendo Switch</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">Lector de Pantalla</th>
-                            <td>Sí (VoiceOver)</td>
-                            <td>Sí (Narrador)</td>
-                            <td>Sí (Funcionalidad limitada)</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Remapeo de Botones</th>
-                            <td>Sí (Nativo del sistema)</td>
-                            <td>Sí (Nativo y app Accesorios)</td>
-                            <td>Sí (Nativo del sistema)</td>
-                        </tr>
-                         <tr>
-                            <th scope="row">Filtros de Color</th>
-                            <td>Sí (Corrección para daltonismo)</td>
-                            <td>Sí (Filtros para daltonismo)</td>
-                            <td>Sí (Modos de alto contraste)</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Compatibilidad Adaptativa</th>
-                            <td>Compatible con periféricos de terceros</td>
-                            <td>Totalmente compatible con Xbox Adaptive Controller</td>
-                            <td>Compatible con Hori Flex y adaptadores</td>
-                        </tr>
-                    </tbody>
-                </table>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <form class="needs-validation" novalidate>
+                    
+                    <div class="mb-3">
+                        <label for="nombreUsuario" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombreUsuario" placeholder="Ej: Gabe Newell" required>
+                        <div class="invalid-feedback">
+                            Por favor, ingresa tu nombre.
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="emailUsuario" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="emailUsuario" placeholder="nombre@ejemplo.com" required>
+                        <div class="invalid-feedback">
+                            Por favor, ingresa un correo electrónico válido.
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="categoriaConsulta" class="form-label">Categoría de la Consulta</label>
+                        <select class="form-select" id="categoriaConsulta" required>
+                            <option selected disabled value="">Elige una opción...</option>
+                            <option>Consulta sobre Consolas</option>
+                            <option>Dudas sobre Periféricos</option>
+                            <option>Sugerencia para el Sitio Web</option>
+                            <option>Reporte de Error</option>
+                            <option>Otro</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Por favor, selecciona una categoría.
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Juegos de Interés (opcional)</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="checkJuego1">
+                            <label class="form-check-label" for="checkJuego1">
+                                The Last of Us Part I
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="checkJuego2">
+                            <label class="form-check-label" for="checkJuego2">
+                                Forza Motorsport
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="checkJuego3">
+                            <label class="form-check-label" for="checkJuego3">
+                                Diablo IV
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="fechaIncidente" class="form-label">Fecha del Incidente (si aplica)</label>
+                        <input type="date" class="form-control" id="fechaIncidente">
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="mensajeUsuario" class="form-label">Tu Mensaje</label>
+                        <textarea class="form-control" id="mensajeUsuario" rows="5" placeholder="Escribe aquí tu consulta o sugerencia de la forma más detallada posible..." required></textarea>
+                        <div class="invalid-feedback">
+                            Por favor, no te olvides de escribir tu mensaje.
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <button class="btn btn-primary btn-lg" type="submit">Enviar Mensaje</button>
+                    </div>
+                </form>
             </div>
-        </section>
-
-        <section id="perifericos" aria-labelledby="titulo-perifericos">
-            <h2 id="titulo-perifericos" class="mb-4">Periféricos de Accesibilidad</h2>
-            <div class="row g-4">
-                
-                <div class="col-md-6 col-lg-4">
-                    <div class="card bg-dark text-white h-100">
-                        <img src="https://th.bing.com/th/id/R.9d53745e31268b3825f999d5412993e9?rik=vTiN6I2t5NvVOA&pid=ImgRaw&r=0" class="card-img-top" alt="Controlador Adaptable de Xbox sobre un fondo oscuro.">
-                        <div class="card-body">
-                            <h5 class="card-title">Xbox Adaptive Controller</h5>
-                            <p class="card-text">Un centro unificado para dispositivos que ayuda a que los videojuegos sean más accesibles. Conecta interruptores, botones y joysticks externos.</p>
-                            <a href="https://www.xbox.com/es-ES/accessories/controllers/xbox-adaptive-controller?msockid=267fa0a1314865e019ebb54c30346417" class="btn btn-primary" target="_blank">Ver más detalles</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="card bg-dark text-white h-100">
-                        <img src="https://livingwithamplitude.com/wp-content/uploads/2021/10/LogitechFIN.jpg" alt="Kit de Juego Adaptable de Logitech con varios botones e interruptores.">
-                        <div class="card-body">
-                            <h5 class="card-title">Logitech G Adaptive Gaming Kit</h5>
-                            <p class="card-text">Un conjunto completo de botones e interruptores de alto rendimiento para expandir las posibilidades del Xbox Adaptive Controller.</p>
-                            <a href="https://www.logitechg.com/es-es/products/gamepads/adaptive-gaming-kit-accessories.html" class="btn btn-primary" target="_blank">Ver más detalles</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="card bg-dark text-white h-100">
-                        <img src="https://tse2.mm.bing.net/th/id/OIP.4OjnpKLAAgdMr-SED9e95QHaE-?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" class="card-img-top" alt="Controlador Hori Flex para Nintendo Switch.">
-                         <div class="card-body">
-                            <h5 class="card-title">Hori Flex Controller</h5>
-                            <p class="card-text">Permite a los jugadores de Nintendo Switch crear configuraciones personalizadas con interruptores y joysticks externos.</p>
-                            <a href="https://www.flex-controller.com/" class="btn btn-primary" target="_blank">Ver más detalles</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
+        </div>
     </main>
     <footer class="text-center text-lg-start text-white pt-4 border-top border-white border-3 border-opacity-10 text-center py-3 mt-5">
         <div class="container text-center text-md-start">

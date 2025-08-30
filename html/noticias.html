@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="icon" href="../favicon.png" type="image/x-icon">
+    <title>Productos - Level-Up Accesible</title>
+</head>
+<body class="pt-4">
+    <header class="bg-primary bg-gradient shadow-sm mb-4 fixed-top m-3">
+        <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand me-auto fs-2" href="../index.html"><img src="../favicon.png" alt="Logo" width="60" height="60" class="mx-3">Level-Up</a>
+            <div class="offcanvas offcanvas-end bg-black" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Level-Up</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link active text-white fs-5" aria-current="page" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-lg-2 text-white fs-5" href="./productos.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-lg-2 text-white fs-5" href="./comunidades.html">Comunidades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-lg-2 text-white fs-5" href="./noticias.html">Noticias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-lg-2 text-white fs-5" href="../index.html">Sobre nosotros</a>
+                </li>
+                </ul>
+            </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        </nav>
+    </header>
+    <main class="container mt-5 pt-5">
+        <div class="text-center mb-5">
+            <h1 class="display-4 fw-bold">Noticias y Lanzamientos Accesibles</h1>
+            <p class="lead text-white-50">Mantente al día con las últimas novedades en el mundo del gaming inclusivo.</p>
+        </div>
+
+        <div class="card bg-dark text-white mb-5 shadow-lg border-light border-opacity-25">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="https://i.blogs.es/68791a/ea-accesibilidad/1200_800.jpeg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Logo de Electronic Arts (EA) sobre un fondo con arte de sus juegos.">
+                </div>
+                <div class="col-md-8 d-flex flex-column">
+                    <div class="card-body">
+                        <h5 class="card-title display-6">EA Libera sus Patentes de Accesibilidad para Todos</h5>
+                        <p class="card-text fs-5">En un movimiento histórico para la industria, Electronic Arts (EA) ha anunciado que todas sus patentes y tecnologías relacionadas con la accesibilidad ahora son de uso libre. Esto significa que cualquier desarrollador puede implementar estas innovaciones en sus juegos sin costo ni temor a problemas legales.</p>
+                        <p class="card-text"><small class="text-muted">Fuente: 3DJuegos LATAM</small></p>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0 p-3 text-end">
+                        <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modalEA">
+                            Leer más
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card bg-dark text-white mb-5 shadow-lg border-light border-opacity-25">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="https://images.openai.com/static-rsc-1/1a4ZgK4Q_pDn-ZsbiRq54kUMmbXYntztTGlY0Fwi9n9VGhgbXaGRY0DB0OaEuyObePdT5JeRr9JWyrhFiUV03zn9cgqhN-o4Jemyd2SwLpNaPum-EO2EvaZiyoiTlzmwOK-PAcScJj4CKqrby3VWP3tfuOOdYaEEyATcWGv7vp-Vt_PxwQOWnvb4IhK7SwpTqTWA8s-8xi7uMSZmjljI7T-cld1BszV4qKFRmtcAxKg" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Logo de MeriStation sobre un fondo naranja.">
+                </div>
+                <div class="col-md-8 d-flex flex-column">
+                    <div class="card-body">
+                        <h5 class="card-title display-6">"Aquí jugamos todos": MeriStation da voz a la comunidad de Videociegos</h5>
+                        <p class="card-text fs-5">El medio MeriStation ha lanzado una serie de encuentros sobre accesibilidad, comenzando con una entrevista a Sergio Vera, fundador de Videociegos. En la charla se explora cómo los jugadores ciegos disfrutan de los videojuegos, los retos que enfrentan y las tecnologías que lo hacen posible.</p>
+                        <p class="card-text"><small class="text-muted">Fuente: MeriStation</small></p>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0 p-3 text-end">
+                        <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modalMeristation">
+                            Leer más
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card bg-dark text-white mb-5 shadow-lg border-light border-opacity-25">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="https://ga11y.fundaciononce.es/sites/default/files/galeria/2_39.PNG" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Logo de Steam sobre un fondo azul oscuro.">
+                </div>
+                <div class="col-md-8 d-flex flex-column">
+                    <div class="card-body">
+                        <h5 class="card-title display-6">Steam da un Paso Adelante con Mejoras de Accesibilidad en su Beta</h5>
+                        <p class="card-text fs-5">Fundación ONCE, a través de su proyecto Ga11y, informa que la última beta de Steam incluye mejoras significativas de accesibilidad. La plataforma de Valve busca facilitar la navegación y la experiencia de usuario para personas con discapacidad directamente en su cliente de escritorio.</p>
+                        <p class="card-text"><small class="text-muted">Fuente: Ga11y - Fundación ONCE</small></p>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0 p-3 text-end">
+                        <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modalSteam">
+                            Leer más
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="modalEA" tabindex="-1" aria-labelledby="modalEALabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content bg-dark text-white">
+                    <div class="modal-header border-secondary">
+                        <h5 class="modal-title" id="modalEALabel">Detalles: Patentes de Accesibilidad de EA</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>La liberación de las patentes de EA incluye tecnologías clave como el aclamado sistema 'Ping' de Apex Legends, que permite la comunicación no verbal. También abarca tecnologías para personas con daltonismo y problemas de audición.</p>
+                        <ul>
+                            <li><strong>Sistema 'Ping':</strong> Permite a los jugadores comunicar tácticamente información contextual compleja con solo presionar un botón.</li>
+                            <li><strong>Tecnología de contraste:</strong> Sistemas que ajustan automáticamente los colores para hacerlos más visibles para personas con daltonismo.</li>
+                            <li><strong>Audio personalizado:</strong> Opciones que modifican y ecualizan el audio para resaltar los sonidos cruciales del juego para personas con dificultades auditivas.</li>
+                        </ul>
+                        <p>Este compromiso promueve una industria más colaborativa e inclusiva, permitiendo que incluso los estudios más pequeños implementen funciones de accesibilidad de primer nivel.</p>
+                    </div>
+                    <div class="modal-footer border-secondary">
+                        <a href="https://www.3djuegos.lat/ps5/ea-da-paso-gigantesco-inclusion-para-videojuegos-sus-patentes-accesibilidad-ahora-uso-libre" target="_blank" class="btn btn-info">Ver Noticia Original</a>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalMeristation" tabindex="-1" aria-labelledby="modalMeristationLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content bg-dark text-white">
+                    <div class="modal-header border-secondary">
+                        <h5 class="modal-title" id="modalMeristationLabel">Detalles: Encuentros en MeriStation con Videociegos</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Sergio Vera, de la comunidad Videociegos, destaca la importancia de que los desarrolladores piensen en la accesibilidad desde las primeras fases del diseño. Menciona que muchos juegos son disfrutables para personas ciegas gracias al diseño de sonido estéreo y pistas de audio claras.</p>
+                        <p>Algunos puntos clave de la entrevista son:</p>
+                        <ul>
+                            <li>La relevancia de juegos como The Last of Us Parte I, que incluyó un modo de accesibilidad completo con navegación asistida y descripción de audio.</li>
+                            <li>La necesidad de que los menús de los juegos sean navegables con lectores de pantalla.</li>
+                            <li>Cómo la comunidad se organiza para crear guías y mods que hacen accesibles juegos que originalmente no lo eran.</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer border-secondary">
+                        <a href="https://as.com/meristation/noticias/accesibilidad-y-videojuegos-aqui-jugamos-todos-encuentros-en-meristation-1-con-sergio-vega-de-videociegos-n/" target="_blank" class="btn btn-info">Ver Noticia Original</a>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalSteam" tabindex="-1" aria-labelledby="modalSteamLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content bg-dark text-white">
+                    <div class="modal-header border-secondary">
+                        <h5 class="modal-title" id="modalSteamLabel">Detalles: Mejoras de Accesibilidad en Steam</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Según el análisis de Ga11y (Fundación ONCE), la beta de Steam está probando nuevas funcionalidades para mejorar la experiencia de todos los usuarios.</p>
+                        <p>Aunque los detalles completos aún están en desarrollo, las mejoras observadas se centran en:</p>
+                        <ul>
+                            <li><strong>Navegación por teclado:</strong> Mejoras en la capacidad de navegar por la tienda y la biblioteca de juegos utilizando únicamente el teclado.</li>
+                            <li><strong>Contraste y legibilidad:</strong> Ajustes en la interfaz de usuario para mejorar el contraste de los textos y el tamaño de la fuente.</li>
+                            <li><strong>Compatibilidad con lectores de pantalla:</strong> Optimización de la aplicación para que funcione de manera más fluida con software como NVDA o JAWS.</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer border-secondary">
+                        <a href="https://ga11y.fundaciononce.es/noticias/steam-incorpora-mejoras-de-accesibilidad-en-su-version-beta" target="_blank" class="btn btn-info">Ver Noticia Original</a>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="text-center text-lg-start text-white pt-4 border-top border-white border-3 border-opacity-10 text-center py-3 mt-5">
+        <div class="container text-center text-md-start">
+            <div class="row">
+
+            <div class="col-md-4 col-lg-5 mx-auto mt-3">
+                <h6 class="text-uppercase fw-bold mb-4">
+                Level-Up Accesible
+                </h6>
+                <p>
+                Comunidad dedicada a brindar información sobre videojuegos, consolas y periféricos que promueven la inclusión de jugadores con discapacidades.
+                </p>
+            </div>
+
+            <div class="col-md-4 col-lg-4 mx-auto mt-3">
+                <h6 class="text-uppercase fw-bold mb-4">
+                Mapa del Sitio
+                </h6>
+                <ul class="list-unstyled">
+                <li class="mb-2"><a href="../index.html" class="text-white">Home</a></li>
+                <li class="mb-2"><a href="./noticias.html" class="text-white">Noticias y Lanzamientos</a></li>
+                <li class="mb-2"><a href="./productos.html" class="text-white">Consolas y Periféricos</a></li>
+                <li class="mb-2"><a href="./comunidades.html" class="text-white">Comunidad</a></li>
+                <li class="mb-2"><a href="./foro.html" class="text-white">Foro de Ayuda</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-4 col-lg-3 mx-auto mt-3">
+                <h6 class="text-uppercase fw-bold mb-4">Síguenos</h6>
+                
+                <a href="#" class="btn btn-outline-light btn-floating m-1" role="button" aria-label="Visita nuestro Facebook">
+                <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                </a>
+                
+                <a href="#" class="btn btn-outline-light btn-floating m-1" role="button" aria-label="Visita nuestro Twitter">
+                <i class="fab fa-twitter" aria-hidden="true"></i>
+                </a>
+
+                <a href="#" class="btn btn-outline-light btn-floating m-1" role="button" aria-label="Visita nuestro Instagram">
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+                </a>
+
+                <a href="#" class="btn btn-outline-light btn-floating m-1" role="button" aria-label="Visita nuestro canal de YouTube">
+                <i class="fab fa-youtube" aria-hidden="true"></i>
+                </a>
+            </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
